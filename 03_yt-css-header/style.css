@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.hashtag-header {
+    padding: 4rem;
+    background-color: #065FD4;
+    color: white;
+    background-image: url(/images/background.png);
+    background-size: 260px;
+    background-position-x: 100%;
+    background-position-y: -160px;
+    background-repeat: no-repeat;
+}
+
+
+h1 {
+    margin: 0;
+    margin-bottom: 1rem;
+    font-size: 4rem;
+}
+
+.hashtag-header span {
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+
+.hashtag-header img {
+    width: 3rem;
+    border-radius: 100%;
+    border: 4px solid white;
+    height: 3rem;
+    vertical-align: middle;
+}
+
+
+img {
+    margin-left: -0.8rem;
+}
+
+.image-container {
+    display: flex;
+    justify-self: flex-end;
+    flex-direction: row-reverse;
+}
+
+

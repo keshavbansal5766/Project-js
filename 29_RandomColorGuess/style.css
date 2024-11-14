@@ -1,0 +1,22 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 10px;
+}
+
+#options-container {
+  display: grid;
+  grid-template-columns: repeat(3, 0fr);
+}
+
+#options-container div {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#options-container div:hover {
+  scale: 1.5;
+  transition: 0.7s all;
+}

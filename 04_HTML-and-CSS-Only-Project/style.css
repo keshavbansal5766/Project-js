@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    /* padding: 1.5rem; */
+    align-items: center;
+    justify-content: center;
+}
+
+.cards-container {
+    color: white;
+    /* padding: 1.5rem; */
+    margin: 1.5rem;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    /* margin: auto; */
+    /* margin-inline: auto; */
+    max-width: 900px;
+} 
+
+a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    /* without display: inline-block; margin,height,width not work
+    because anchor tag is inline element and padding will work work
+    but, not as we want */
+}
+
+.card {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* flex-basis: 100%; */
+}
+
+.card img {
+    width: 64px;
+    height: 40px;
+}
+
+.card a {
+    border: 2px solid white;
+    padding: 1em 2em;
+    border-radius: 2em;
+    margin-top: auto;
+    /* align-self: flex-start; */
+    margin-right: auto;
+    /* first value 1em will apply for top-bottom 
+    second value 2em will apply for left-right */
+}
+
+.card h2 {
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.5rem;
+}
+
+.card p {
+    opacity: 0.7;
+    /* line-height: 1.5rem; */
+    line-height: 1.5;
+    margin-bottom: 2.5rem;
+}
+
+.orange-card {
+    background-color: hsl(31, 77%, 52%);
+    /* border-radius: 10px 10px 0px 0px;       */
+    /* border-top-left-radius: 10px;        long method
+    border-top-right-radius: 10px; */
+}
+
+.cyan-card {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.dark-cyan-card {
+    background-color: hsl(179, 100%, 13%);
+    /* border-radius: 0px 0px 10px 10px;   */
+    /* border-bottom-left-radius: 10px;   long method
+    border-bottom-right-radius: 10px; */
+}
+
+@media (max-width: 850px) {
+    .cards-container {
+        flex-direction: column;
+        max-width: 500px;
+    }
+
+    .card {
+        width: unset;
+        /* width: auto; */
+    }
+
+    .orange-card a {
+        background-color: white;
+        color: hsl(31, 77%, 52%);
+    }
+
+    .cyan-card a {
+        background-color: white;
+        color: hsl(184, 100%, 22%);
+    }
+
+    .dark-cyan-card a {
+        background-color: white;
+        color: hsl(179, 100%, 13%);
+    }
+}
